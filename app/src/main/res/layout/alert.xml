@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="330dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/dialog"
+    android:layout_gravity="center|top"
+
+    >
+
+    <TextView
+        android:id="@+id/clue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/bevan"
+        android:text="CLUE"
+        android:textColor="@color/black"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/clue_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:text="HERE WE WILL ENTER THE"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        ></TextView>
+
+    <Button
+        android:id="@+id/btnDialog"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/button3"
+        android:text="OKAY"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        >
+
+    </Button>
+
+
+
+</LinearLayout>

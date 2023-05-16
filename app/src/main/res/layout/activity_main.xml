@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gardient_background"
+    tools:context=".Main_activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".9"
+            android:orientation="vertical"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".9"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:id="@+id/line_1"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="bottom"
+                    app:srcCompat="@drawable/minus_horizontal_straight_line"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="-40dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/crown"
+                    android:layout_width="90dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="bottom"
+                    app:srcCompat="@drawable/crown_icon"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"
+                    />
+                <ImageView
+                    android:id="@+id/line_2"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="bottom"
+                    app:srcCompat="@drawable/minus_horizontal_straight_line"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="-40dp"
+
+                    />
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:id="@+id/word_jumble"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/frijole"
+                android:gravity="center|top"
+                android:text=" WORD\nJUMBLE"
+                android:textColor="#40E5F4"
+                android:textSize="45dp"
+                android:textStyle="italic"
+                android:layout_weight="1"
+
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/word"
+                android:layout_width="165dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="35dp"
+                android:gravity="center"
+                android:background="@drawable/edit_background2"
+                android:fontFamily="@font/candal"
+                android:outlineProvider="paddedBounds"
+                android:text="Word"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/word_input"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/edit_round"
+                android:textColor="#000000"
+                >
+
+            </EditText>
+            <TextView
+                android:id="@+id/clue"
+                android:layout_width="165dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="35dp"
+                android:gravity="center"
+                android:background="@drawable/edit_background2"
+                android:fontFamily="@font/candal"
+                android:outlineProvider="paddedBounds"
+                android:text="Clue"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/clue_input"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:background="@drawable/edit_round"
+                android:textColor="#120F0F"
+                android:outlineProvider="background">
+
+            </EditText>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+            <Button
+                android:id="@+id/btnStart"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:fontFamily="@font/carter_one"
+                android:text="Start"
+                android:textSize="25dp"
+                android:textColor="#fff"
+                android:drawableEnd="@drawable/baseline_play_arrow_24">
+
+            </Button>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
